@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D55749622A1554700912593 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749522A1554700912593 /* Router.swift */; };
+		7D55749822A1577D00912593 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749722A1577D00912593 /* Network.swift */; };
+		7D55749A22A1674300912593 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749922A1674300912593 /* APIError.swift */; };
+		7D55749C22A168A300912593 /* URLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749B22A168A300912593 /* URLError.swift */; };
 		7D5E7FD91BBE17CC1FF0D235 /* Pods_Beers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23707AE0036EF124EE5CE28E /* Pods_Beers.framework */; };
 		7DE505CC22A15109003DDE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE505CB22A15109003DDE20 /* AppDelegate.swift */; };
 		7DE505CE22A15109003DDE20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE505CD22A15109003DDE20 /* ViewController.swift */; };
@@ -31,6 +35,10 @@
 		0DDA146B9D83EA7EA1D175AD /* Pods-Beers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beers.debug.xcconfig"; path = "Target Support Files/Pods-Beers/Pods-Beers.debug.xcconfig"; sourceTree = "<group>"; };
 		23707AE0036EF124EE5CE28E /* Pods_Beers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DE6E73AA0E42E66B201700 /* Pods-BeersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeersTests.debug.xcconfig"; path = "Target Support Files/Pods-BeersTests/Pods-BeersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D55749522A1554700912593 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7D55749722A1577D00912593 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		7D55749922A1674300912593 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		7D55749B22A168A300912593 /* URLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLError.swift; sourceTree = "<group>"; };
 		7DE505C822A15109003DDE20 /* Beers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE505CB22A15109003DDE20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DE505CD22A15109003DDE20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +83,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D55749422A1551C00912593 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7D55749522A1554700912593 /* Router.swift */,
+				7D55749722A1577D00912593 /* Network.swift */,
+				7D55749922A1674300912593 /* APIError.swift */,
+				7D55749B22A168A300912593 /* URLError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		7DE505BF22A15109003DDE20 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +117,7 @@
 		7DE505CA22A15109003DDE20 /* Beers */ = {
 			isa = PBXGroup;
 			children = (
+				7D55749422A1551C00912593 /* Network */,
 				7DE505CB22A15109003DDE20 /* AppDelegate.swift */,
 				7DE505CD22A15109003DDE20 /* ViewController.swift */,
 				7DE505CF22A15109003DDE20 /* Main.storyboard */,
@@ -125,7 +145,6 @@
 				27DE6E73AA0E42E66B201700 /* Pods-BeersTests.debug.xcconfig */,
 				CA2D17A0C227F9B8E2685B4A /* Pods-BeersTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -298,6 +317,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DE505CE22A15109003DDE20 /* ViewController.swift in Sources */,
+				7D55749622A1554700912593 /* Router.swift in Sources */,
+				7D55749C22A168A300912593 /* URLError.swift in Sources */,
+				7D55749822A1577D00912593 /* Network.swift in Sources */,
+				7D55749A22A1674300912593 /* APIError.swift in Sources */,
 				7DE505CC22A15109003DDE20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
