@@ -11,6 +11,9 @@
 		7D55749822A1577D00912593 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749722A1577D00912593 /* Network.swift */; };
 		7D55749A22A1674300912593 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749922A1674300912593 /* APIError.swift */; };
 		7D55749C22A168A300912593 /* URLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749B22A168A300912593 /* URLError.swift */; };
+		7D55749F22A1710400912593 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749E22A1710400912593 /* NetworkProvider.swift */; };
+		7D5574A222A174D100912593 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574A122A174D100912593 /* Beer.swift */; };
+		7D5574A422A175F900912593 /* BeersDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574A322A175F900912593 /* BeersDataProvider.swift */; };
 		7D5E7FD91BBE17CC1FF0D235 /* Pods_Beers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23707AE0036EF124EE5CE28E /* Pods_Beers.framework */; };
 		7DE505CC22A15109003DDE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE505CB22A15109003DDE20 /* AppDelegate.swift */; };
 		7DE505CE22A15109003DDE20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE505CD22A15109003DDE20 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 		7D55749722A1577D00912593 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		7D55749922A1674300912593 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		7D55749B22A168A300912593 /* URLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLError.swift; sourceTree = "<group>"; };
+		7D55749E22A1710400912593 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		7D5574A122A174D100912593 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		7D5574A322A175F900912593 /* BeersDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersDataProvider.swift; sourceTree = "<group>"; };
 		7DE505C822A15109003DDE20 /* Beers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE505CB22A15109003DDE20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DE505CD22A15109003DDE20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +100,23 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		7D55749D22A170CF00912593 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7D55749E22A1710400912593 /* NetworkProvider.swift */,
+				7D5574A322A175F900912593 /* BeersDataProvider.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7D5574A022A174C500912593 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D5574A122A174D100912593 /* Beer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7DE505BF22A15109003DDE20 = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +140,9 @@
 		7DE505CA22A15109003DDE20 /* Beers */ = {
 			isa = PBXGroup;
 			children = (
+				7D5574A022A174C500912593 /* Model */,
 				7D55749422A1551C00912593 /* Network */,
+				7D55749D22A170CF00912593 /* Repository */,
 				7DE505CB22A15109003DDE20 /* AppDelegate.swift */,
 				7DE505CD22A15109003DDE20 /* ViewController.swift */,
 				7DE505CF22A15109003DDE20 /* Main.storyboard */,
@@ -316,10 +341,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D55749F22A1710400912593 /* NetworkProvider.swift in Sources */,
 				7DE505CE22A15109003DDE20 /* ViewController.swift in Sources */,
+				7D5574A422A175F900912593 /* BeersDataProvider.swift in Sources */,
 				7D55749622A1554700912593 /* Router.swift in Sources */,
 				7D55749C22A168A300912593 /* URLError.swift in Sources */,
 				7D55749822A1577D00912593 /* Network.swift in Sources */,
+				7D5574A222A174D100912593 /* Beer.swift in Sources */,
 				7D55749A22A1674300912593 /* APIError.swift in Sources */,
 				7DE505CC22A15109003DDE20 /* AppDelegate.swift in Sources */,
 			);
