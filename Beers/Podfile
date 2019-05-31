@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+
+target 'Beers' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Kingfisher'
+
+  target 'BeersTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
