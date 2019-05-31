@@ -14,10 +14,16 @@
 		7D55749F22A1710400912593 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D55749E22A1710400912593 /* NetworkProvider.swift */; };
 		7D5574A222A174D100912593 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574A122A174D100912593 /* Beer.swift */; };
 		7D5574A422A175F900912593 /* BeersDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574A322A175F900912593 /* BeersDataProvider.swift */; };
+		7D5574A722A1773A00912593 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574A622A1773A00912593 /* Coordinator.swift */; };
+		7D5574A922A1777600912593 /* AppCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574A822A1777600912593 /* AppCordinator.swift */; };
+		7D5574AC22A17A4200912593 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574AB22A17A4200912593 /* BeerListViewController.swift */; };
+		7D5574AE22A17A5200912593 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574AD22A17A5200912593 /* BeerListViewModel.swift */; };
+		7D5574B222A1802E00912593 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574B122A1802E00912593 /* UITableView+Extensions.swift */; };
+		7D5574B522A189E700912593 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5574B322A189E700912593 /* ListCell.swift */; };
+		7D5574B622A189E700912593 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5574B422A189E700912593 /* ListCell.xib */; };
 		7D5E7FD91BBE17CC1FF0D235 /* Pods_Beers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23707AE0036EF124EE5CE28E /* Pods_Beers.framework */; };
 		7DE505CC22A15109003DDE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE505CB22A15109003DDE20 /* AppDelegate.swift */; };
 		7DE505CE22A15109003DDE20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE505CD22A15109003DDE20 /* ViewController.swift */; };
-		7DE505D122A15109003DDE20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE505CF22A15109003DDE20 /* Main.storyboard */; };
 		7DE505D322A1510A003DDE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE505D222A1510A003DDE20 /* Assets.xcassets */; };
 		7DE505D622A1510A003DDE20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE505D422A1510A003DDE20 /* LaunchScreen.storyboard */; };
 		7DE505E122A1510A003DDE20 /* BeersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE505E022A1510A003DDE20 /* BeersTests.swift */; };
@@ -45,10 +51,16 @@
 		7D55749E22A1710400912593 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		7D5574A122A174D100912593 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		7D5574A322A175F900912593 /* BeersDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersDataProvider.swift; sourceTree = "<group>"; };
+		7D5574A622A1773A00912593 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7D5574A822A1777600912593 /* AppCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinator.swift; sourceTree = "<group>"; };
+		7D5574AB22A17A4200912593 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		7D5574AD22A17A5200912593 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
+		7D5574B122A1802E00912593 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		7D5574B322A189E700912593 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		7D5574B422A189E700912593 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		7DE505C822A15109003DDE20 /* Beers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE505CB22A15109003DDE20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DE505CD22A15109003DDE20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7DE505D022A15109003DDE20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DE505D222A1510A003DDE20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DE505D522A1510A003DDE20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DE505D722A1510A003DDE20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +129,42 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7D5574A522A1772E00912593 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7D5574A622A1773A00912593 /* Coordinator.swift */,
+				7D5574A822A1777600912593 /* AppCordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7D5574AA22A17A2C00912593 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				7D5574AF22A17B7F00912593 /* List */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		7D5574AF22A17B7F00912593 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7D5574AB22A17A4200912593 /* BeerListViewController.swift */,
+				7D5574AD22A17A5200912593 /* BeerListViewModel.swift */,
+				7D5574B322A189E700912593 /* ListCell.swift */,
+				7D5574B422A189E700912593 /* ListCell.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		7D5574B022A1801E00912593 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D5574B122A1802E00912593 /* UITableView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7DE505BF22A15109003DDE20 = {
 			isa = PBXGroup;
 			children = (
@@ -140,12 +188,14 @@
 		7DE505CA22A15109003DDE20 /* Beers */ = {
 			isa = PBXGroup;
 			children = (
+				7D5574B022A1801E00912593 /* Extensions */,
 				7D5574A022A174C500912593 /* Model */,
 				7D55749422A1551C00912593 /* Network */,
 				7D55749D22A170CF00912593 /* Repository */,
+				7D5574A522A1772E00912593 /* Coordinator */,
+				7D5574AA22A17A2C00912593 /* Module */,
 				7DE505CB22A15109003DDE20 /* AppDelegate.swift */,
 				7DE505CD22A15109003DDE20 /* ViewController.swift */,
-				7DE505CF22A15109003DDE20 /* Main.storyboard */,
 				7DE505D222A1510A003DDE20 /* Assets.xcassets */,
 				7DE505D422A1510A003DDE20 /* LaunchScreen.storyboard */,
 				7DE505D722A1510A003DDE20 /* Info.plist */,
@@ -258,8 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DE505D622A1510A003DDE20 /* LaunchScreen.storyboard in Resources */,
+				7D5574B622A189E700912593 /* ListCell.xib in Resources */,
 				7DE505D322A1510A003DDE20 /* Assets.xcassets in Resources */,
-				7DE505D122A15109003DDE20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,14 +391,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5574AC22A17A4200912593 /* BeerListViewController.swift in Sources */,
+				7D5574B222A1802E00912593 /* UITableView+Extensions.swift in Sources */,
+				7D5574AE22A17A5200912593 /* BeerListViewModel.swift in Sources */,
 				7D55749F22A1710400912593 /* NetworkProvider.swift in Sources */,
 				7DE505CE22A15109003DDE20 /* ViewController.swift in Sources */,
 				7D5574A422A175F900912593 /* BeersDataProvider.swift in Sources */,
+				7D5574B522A189E700912593 /* ListCell.swift in Sources */,
 				7D55749622A1554700912593 /* Router.swift in Sources */,
 				7D55749C22A168A300912593 /* URLError.swift in Sources */,
+				7D5574A722A1773A00912593 /* Coordinator.swift in Sources */,
 				7D55749822A1577D00912593 /* Network.swift in Sources */,
 				7D5574A222A174D100912593 /* Beer.swift in Sources */,
 				7D55749A22A1674300912593 /* APIError.swift in Sources */,
+				7D5574A922A1777600912593 /* AppCordinator.swift in Sources */,
 				7DE505CC22A15109003DDE20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,14 +428,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7DE505CF22A15109003DDE20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7DE505D022A15109003DDE20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7DE505D422A1510A003DDE20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
