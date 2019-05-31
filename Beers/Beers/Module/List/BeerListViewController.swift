@@ -9,6 +9,10 @@
 import UIKit
 import Kingfisher
 
+enum DetailEvent: Event {
+  case detail(beer: Beer)
+}
+
 final class BeersListViewController: UITableViewController {
   
   let viewModel: BeerListViewModel
@@ -27,6 +31,8 @@ final class BeersListViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    title = "Cervejas"
+    
     viewModel.onResult = { [weak self] in
       self?.reloadData()
     }
@@ -36,6 +42,8 @@ final class BeersListViewController: UITableViewController {
     }
     
     tableView.register(UINib(nibName: "ListCell", bundle: nil), forCellReuseIdentifier: "ListCell")
+    
+    tableView.tableFooterView = UIView()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -62,6 +70,15 @@ extension BeersListViewController {
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return viewModel.beers.count
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let beer = viewModel.beers[indexPath.row]
+    coordinator?.handle(DetailEvent.detail(beer: beer))
+    
+    DispatchQueue.main.async {
+      tableView.deselectRow(at: indexPath, animated: true)
+    }
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

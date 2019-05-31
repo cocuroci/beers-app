@@ -12,6 +12,8 @@ final class AppCoordinator: Coordinator {
   
   let window: UIWindow
   
+  lazy var rootViewController = UINavigationController()
+  
   init(window: UIWindow) {
     self.window = window
   }
@@ -21,14 +23,22 @@ final class AppCoordinator: Coordinator {
     let listController = BeersListViewController(viewModel: listViewModel)
     listController.coordinator = self
     
-    window.rootViewController = UINavigationController(rootViewController: listController)
+    rootViewController.setViewControllers([listController], animated: true)
+    window.rootViewController = rootViewController
   }
   
-  private func showDetail(model: Beer) {
+  private func showDetail(beer: Beer) {
+    let detailViewModel = BeerDetailViewModel(beer: beer)
+    let detailViewControler = BeersDetailViewController(viewModel: detailViewModel)
     
+    rootViewController.pushViewController(detailViewControler, animated: true)
   }
   
   func handle(_ event: Event) {
-    
+    switch event {
+    case DetailEvent.detail(let beer):
+      showDetail(beer: beer)
+    default: ()
+    }
   }
 }
