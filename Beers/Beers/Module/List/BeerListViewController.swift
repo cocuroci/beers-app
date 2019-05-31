@@ -56,7 +56,11 @@ final class BeersListViewController: UITableViewController {
   }
   
   private func showError(error: Error) {
+    let alert = UIAlertController(title: "Atenção", message: error.localizedDescription, preferredStyle: .alert)
     
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    
+    present(alert, animated: true, completion: nil)
   }
 }
 
