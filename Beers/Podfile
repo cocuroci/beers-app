@@ -1,13 +1,39 @@
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
 
 target 'Beers' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+	
   pod 'Kingfisher'
 
   target 'BeersTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Domain' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Domain
+
+  target 'DomainTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'NetworkProvider' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Network
+
+  target 'NetworkProviderTests' do
     inherit! :search_paths
     # Pods for testing
   end

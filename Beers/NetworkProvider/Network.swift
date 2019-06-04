@@ -1,16 +1,15 @@
 //
 //  Network.swift
-//  Beers
+//  Network
 //
-//  Created by Andre Cocuroci on 31/05/19.
+//  Created by Andre Cocuroci on 04/06/19.
 //  Copyright © 2019 Andre Cocuroci. All rights reserved.
 //
 
 import Foundation
 
 protocol Networking {
-  associatedtype Target
-  func request(routing: Target, onComplete: @escaping (Result<Data, Error>) -> Void)
+  func request(routing: Routing, onComplete: @escaping (Result<Data, Error>) -> Void)
 }
 
 final class Network: Networking {
@@ -24,9 +23,9 @@ final class Network: Networking {
   func request(routing: Routing, onComplete: @escaping (Result<Data, Error>) -> Void) {
     let url = routing.baseURL.appendingPathComponent(routing.path)
     var urlComponent = URLComponents(url: url, resolvingAgainstBaseURL: false)
-  
+    
     urlComponent?.queryItems = routing.parameters.map { name, value in
-        return URLQueryItem(name: name, value: value)
+      return URLQueryItem(name: name, value: value)
     }
     
     guard let component = urlComponent, let completURL = component.url else {

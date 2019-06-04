@@ -7,30 +7,18 @@
 //
 
 import Foundation
+import Domain
+import NetworkProvider
 
-final class BeersDataProvider: NetworkProvider {
+final class BeersDataProvider {
   
-  typealias Model = [Beer]
+  private let beerUseCase: Domain.BeerUseCase
   
-  let network: Network
-  
-  init(network: Network) {
-    self.network = network
+  init(beerUseCase: Domain.BeerUseCase) {
+    self.beerUseCase = beerUseCase
   }
   
-  func list(page: Int, onCompleted: @escaping (Result<Model, Error>) -> Void) {
-    network.request(routing: Router.list(page: page)) { result in
-      switch result {
-      case .success(let data):
-        do {
-          let result = try JSONDecoder().decode(Model.self, from: data)
-          onCompleted(Result.success(result))
-        } catch {
-          onCompleted(Result.failure(error))
-        }
-      case .failure(let error):
-        onCompleted(Result.failure(error))
-      }
-    }
+  func list(page: Int, onCompleted: @escaping (Result<[Beer], Error>) -> Void) {
+    self.beerUseCase.list(page: page, onComplete: onCompleted)
   }
 }

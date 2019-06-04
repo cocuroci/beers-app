@@ -1,8 +1,8 @@
 //
 //  URLError.swift
-//  Beers
+//  Network
 //
-//  Created by Andre Cocuroci on 31/05/19.
+//  Created by Andre Cocuroci on 04/06/19.
 //  Copyright © 2019 Andre Cocuroci. All rights reserved.
 //
 

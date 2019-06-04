@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Domain
+import NetworkProvider
 
 final class AppCoordinator: Coordinator {
   
@@ -19,7 +21,9 @@ final class AppCoordinator: Coordinator {
   }
   
   func start() {
-    let listViewModel = BeerListViewModel(repository: BeersDataProvider(network: Network()))
+    let useCaseProvider = NetworkProvider.UseCaseProvider()
+    
+    let listViewModel = BeerListViewModel(repository: BeersDataProvider(beerUseCase: useCaseProvider.makeBeerUseCase()))
     let listController = BeersListViewController(viewModel: listViewModel)
     listController.coordinator = self
     

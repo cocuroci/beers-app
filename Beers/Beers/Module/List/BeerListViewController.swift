@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Domain
 
 enum DetailEvent: Event {
   case detail(beer: Beer)
